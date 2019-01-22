@@ -4,19 +4,21 @@ public class FindingLargeNumber {
 
 	public static void main(String[] args) {
 		
-		int []array={1,2,90,34,20,11098,243,398018,27289,1111,287651,};
+		int []array={1,2,-1,90,34,20,11098,243,398018,27289,1111,287651,999999999};
 		
-		int largestNo = array[0];
 		
-		for(int a = 1;a<array.length;a++)
+		int lNo = array[0];
+		int sNo = array[0];
+		
+		for(int a=1;a<array.length;a++)
 		{
-			if(array[a]>largestNo)
+			if(array[a]>lNo)
 			{
-				largestNo = array[a];
+				lNo=array[a];
 			}
 		}
-		System.out.println(largestNo);
-
+		
+		System.out.println(lNo);
 	}
 
 }

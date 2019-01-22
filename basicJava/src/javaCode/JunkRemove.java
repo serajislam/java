@@ -4,10 +4,12 @@ public class JunkRemove {
 
 	public static void main(String[] args) {
 		
-		String remJunk = "@abc#@$123**()&&&89";
+		String junk ="@@@@@NU****M___A##Y!!!L???A///////";
 		
-		String WithoutJunk= remJunk.replaceAll("[^a-zA-Z0-9]", "");
-		System.out.println(WithoutJunk);
+		String junkRem = junk.replaceAll("[^a-zA-Z-0-9]", "");
+		
+		System.out.println(junkRem);
+		
 	}
 
 }
