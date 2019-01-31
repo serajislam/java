@@ -4,7 +4,7 @@ public class FindingLargeNumber {
 
 	public static void main(String[] args) {
 		
-		int []array={1,2,-1,90,34,20,11098,243,398018,27289,1111,287651,999999999};
+		int []array={10,20,30,40,50,60};
 		
 		
 		int lNo = array[0];
@@ -14,11 +14,22 @@ public class FindingLargeNumber {
 		{
 			if(array[a]>lNo)
 			{
+				//to find second largest no 
+				//sNo=lNo;
 				lNo=array[a];
 			}
+			else if(array[a]<sNo)
+			{
+				//Need to change to find second largest no 
+				//(array[a]>sNo)
+				
+				sNo=array[a];
+			}
+			
 		}
 		
 		System.out.println(lNo);
+		System.out.println(sNo);
 	}
 
 }
